@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vietnam</title>
+</head>
+<body>
+<script>
+    function Temperature(doc) {
+        this.doc = doc;
+        this.getDoc = function () {
+            return doc;
+        };
+        this.CsangF = function (NumberTemperature) {
+            return this.dof = (this.doc - 32) / 1.8;
+        };
+        this.Csangkenvin = function (numberTemperature) {
+            return this.dok = this.doc + 273.15;
+        }
+    };
+    let d = new Temperature(50);
+    let a = d.getDoc();
+    let b = d.CsangF();
+    let c = d.Csangkenvin();
+    alert(a +" Độ C = " + b + " " + " Độ F   "+ c +" Độ K");
+</script>
+</body>
+</html>
